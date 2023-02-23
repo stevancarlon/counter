@@ -1,0 +1,15 @@
+<div class="flex-column">
+    <div class="numbers-container">
+        <h3>Result</h3>
+        <%= for result <- @result do %>
+            <%= result %>
+        <% end %>
+        <div class="nav">
+  <a href={Routes.page_path(@conn, :fizzbuzz)}>FizzBuzz</a>
+  <a href={Routes.page_path(@conn, :fizz)}>Fizz</a>
+  <a href={Routes.page_path(@conn, :buzz)}>Buzz</a>
+  <a href={Routes.page_path(@conn, :other)}>Other</a>
+</div>
+
+    </div>
+</div>
